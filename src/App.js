@@ -8,6 +8,7 @@ function App() {
 			<Switch>
 				{ROUTERS.map(route => (
 					<Route
+						key={route.id}
 						exact
 						path={route.path}
 						component={route.component}
