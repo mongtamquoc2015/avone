@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../../components/Header';
-import { CarouselUI, JumbotronUI, SliderUI } from '../../layout/Home';
+import { BannerUI, CarouselUI, JumbotronUI, SliderUI } from '../../layout/Home';
 
 const HomePage = () => {
 	// Example the data
@@ -67,6 +67,7 @@ const HomePage = () => {
 			<SliderUI sliders={sliders} />
 			<JumbotronUI />
 			<CarouselUI carouselImages={carouselImages} />
+			<BannerUI />
 		</>
 	)
 }
