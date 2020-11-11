@@ -1,16 +1,3 @@
-import React from 'react';
-import Slider from './Slider';
-import Jumbotron from './Jumbotron';
-import Header from '../../components/Header';
-
-const HomeUI = ({ sliders }) => {
-	return (
-		<>
-			<Header />
-			<Slider sliders={sliders} />
-			<Jumbotron />
-		</>
-	)
-}
-
-export default HomeUI;
+export { default as CarouselUI } from './Carousel';
+export { default as JumbotronUI } from './Jumbotron';
+export { default as SliderUI } from './Slider';

@@ -29,6 +29,7 @@ export const Image = styled.div`
 	width: 100%;
 	position: absolute;	
 	cursor: pointer;
+	height: 100%;
 
 	& img {
 		transition: transform 0.45s ease-out;
