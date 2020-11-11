@@ -29,6 +29,10 @@ export const Item = styled.li`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	&:hover {
+		opacity: 0.8;
+	}
 `;
 
 export const TextContent = styled.div`

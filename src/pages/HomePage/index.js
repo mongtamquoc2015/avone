@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import { BannerUI, CarouselUI, JumbotronUI, SliderUI } from '../../layout/Home';
 import LogoBarUI from '../../layout/Home/LogoBar';
@@ -72,6 +73,7 @@ const HomePage = () => {
 			<BannerUI />
 			<LogoBarUI />
 			<StoreInfoUI />
+			<Footer />
 		</>
 	)
 }
