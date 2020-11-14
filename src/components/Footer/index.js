@@ -1,15 +1,14 @@
 import React from 'react'
 import {
 	Button,
-	Container, FooterTop,
+	Container,
+	FooterBottom, FooterTop,
 	Form,
-	GridContainer,
-	GridItem,
 	Icon, Image, Inner, Item,
 	Links, List, Logo,
 	Menu, NavItem, SocialIcons, Text, TextContent,
 	TextField,
-	TextLink, Title, FooterBottom, GridItemText
+	TextLink, Title
 } from './FooterStyles'
 
 const Footer = () => {
@@ -30,7 +29,7 @@ const Footer = () => {
 								</Text>
 								<Text>
 									<b>Phone:</b>
-									(440) 023451212
+									(84) 336016034
 								</Text>
 								<Text>
 									<b>Email:</b>
@@ -45,7 +44,7 @@ const Footer = () => {
 										target="_blank"
 										href="https://facebook.com/namisan2304"
 									>
-										<i class="fab fa-facebook-f"></i>
+										<i className="fab fa-facebook-f"></i>
 									</TextLink>
 								</Icon>
 								<Icon>
@@ -53,7 +52,7 @@ const Footer = () => {
 										target="_blank"
 										href="https://twitter.com/namisan2304"
 									>
-										<i class="fab fa-twitter"></i>
+										<i className="fab fa-twitter"></i>
 									</TextLink>
 								</Icon>
 								<Icon>
@@ -61,7 +60,7 @@ const Footer = () => {
 										target="_blank"
 										href="https://github.com/mongtamquoc2015"
 									>
-										<i class="fab fa-github"></i>
+										<i className="fab fa-github"></i>
 									</TextLink>
 								</Icon>
 								<Icon>
@@ -69,7 +68,7 @@ const Footer = () => {
 										target="_blank"
 										href="https://instargram/namisan2304"
 									>
-										<i class="fab fa-instagram"></i>
+										<i className="fab fa-instagram"></i>
 									</TextLink>
 								</Icon>
 							</SocialIcons>

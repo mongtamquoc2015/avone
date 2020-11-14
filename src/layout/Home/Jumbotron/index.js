@@ -1,8 +1,8 @@
 import React from 'react'
 import {
-	Button, Container, Detail,
-	List, Image, Title, Text,
-	Item, Link
+	Container, Detail,
+	Image,
+	Item, Link, List, Text, Title
 } from './JumbotronStyles'
 
 
@@ -17,9 +17,7 @@ const JumbotronUI = () => {
 					<Detail>
 						<Title>Women Tops</Title>
 						<Text>From world's top designer</Text>
-						<Button>
-							<Link to="/collections/women">Discover Now</Link>
-						</Button>
+						<Link to="/collections/women">Discover Now</Link>
 					</Detail>
 				</Item>
 				<Item>
@@ -29,9 +27,7 @@ const JumbotronUI = () => {
 					<Detail>
 						<Title>Men Shoes</Title>
 						<Text>Up to 70% off on selected item</Text>
-						<Button>
-							<Link to="/collections/men-shoes">Discover Now</Link>
-						</Button>
+						<Link to="/collections/men-shoes">Discover Now</Link>
 					</Detail>
 				</Item>
 				<Item>
@@ -41,9 +37,7 @@ const JumbotronUI = () => {
 					<Detail>
 						<Title>Accesories</Title>
 						<Text>Add fishing touch to your outfit</Text>
-						<Button>
-							<Link to="/collections/accesories">Discover Now</Link>
-						</Button>
+						<Link to="/collections/accesories">Discover Now</Link>
 					</Detail>
 				</Item>
 				<Item>
@@ -53,9 +47,7 @@ const JumbotronUI = () => {
 					<Detail>
 						<Title>Denim</Title>
 						<Text>Find you perfect outfit</Text>
-						<Button>
-							<Link to="/collections/denim">Discover Now</Link>
-						</Button>
+						<Link to="/collections/denim">Discover Now</Link>
 					</Detail>
 				</Item>
 			</List>

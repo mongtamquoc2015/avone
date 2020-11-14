@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Link, Navbar, Symbol, Title } from './BreadcumbsStyles'
 
-const Breadcumbs = ({ title }) => {
+const BreadcumbsUI = ({ title }) => {
 	return (
 		<Container>
 			<Navbar>
@@ -13,4 +13,4 @@ const Breadcumbs = ({ title }) => {
 	)
 }
 
-export default Breadcumbs;
+export default BreadcumbsUI;

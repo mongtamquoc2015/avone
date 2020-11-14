@@ -69,7 +69,10 @@ export const Text = styled.p`
 	margin: 5px 0 0;
 `;
 
-export const Button = styled.button`
+export const Link = styled(RouterLink)`
+	text-decoration: none;
+	color: #fff;
+
 	margin-top: 10px;
 	padding: 8px 20px;
 	background-color: #111;
@@ -93,9 +96,4 @@ export const Button = styled.button`
     border: 2px solid #030505;
     opacity: 1;
 	}
-`;
-
-export const Link = styled(RouterLink)`
-	text-decoration: none;
-	color: #fff;
 `;

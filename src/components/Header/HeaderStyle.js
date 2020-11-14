@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as RouterLink } from 'react-router-dom';
 
 export const Container = styled.header`
 	display: flex;
@@ -25,11 +26,11 @@ export const Logo = styled.h1`
 	height: 18.44px;
 `;
 
-export const Link = styled.a`
-	text-decoration: none;
-	cursor: pointer;
-	transition: color 0.45s ease-out;
-`;
+// export const Link = styled.a`
+// 	text-decoration: none;
+// 	cursor: pointer;
+// 	transition: color 0.45s ease-out;
+// `;
 
 export const Image = styled.img`
 	width: 100%;
@@ -58,7 +59,7 @@ export const Item = styled.li`
 	transition: transform 1s ease-out;
 `;
 
-export const ItemLink = styled.a`
+export const Link = styled(RouterLink)`
 	color: #111111;
   font-size: 13px;
   font-weight: 400;
@@ -72,6 +73,7 @@ export const ItemLink = styled.a`
   display: block;
 
 	font-weight: 500;
+	transition: color 0.45s ease-out;
 
 	&:hover {
 		color: #f77575;
@@ -187,7 +189,7 @@ export const SettingsPopup = styled.div`
 	position: absolute;
 	right: 40px;
 	top: 90px;
-	height: 110px;
+	height: 130px;
 	width: 300px;
 
 	display: flex;
@@ -201,7 +203,9 @@ export const SettingsPopup = styled.div`
 	transition: all 0.25s ease-in-out;
 	transform: translateY(${({ isShowSettingsPopup }) => isShowSettingsPopup ? '-30px' : '0'});
 	cursor: default;
+
 	box-shadow: 2px 2px 5px #333;
+	z-index: 1;
 `;
 
 export const Text = styled.p`
@@ -237,7 +241,6 @@ export const ButtonLoggin = styled.p`
 	background-color: #252525;
 	width: 260px;
 	height: 37px;
-	color: #fff;
 
 	font-weight: 300;
 	font-size: 14px;
@@ -246,6 +249,9 @@ export const ButtonLoggin = styled.p`
 	justify-content: center;
 
 	cursor: pointer;
+	& ${Link} {
+		color: #fff;
+	}
 `;
 
 // CART

@@ -8,7 +8,7 @@ const StoreInfoUI = () => {
 				<List>
 					<Item>
 						<Icon>
-							<i class="fas fa-truck"></i>
+							<i className="fas fa-truck"></i>
 						</Icon>
 						<TextContent>
 							<Title>Free Shipping & Return</Title>
@@ -17,7 +17,7 @@ const StoreInfoUI = () => {
 					</Item>
 					<Item>
 						<Icon>
-							<i class="fas fa-hand-holding-usd"></i>
+							<i className="fas fa-hand-holding-usd"></i>
 						</Icon>
 						<TextContent>
 							<Title>Money Gaugntee</Title>
@@ -26,7 +26,7 @@ const StoreInfoUI = () => {
 					</Item>
 					<Item>
 						<Icon>
-							<i class="fas fa-mobile-alt"></i>
+							<i className="fas fa-mobile-alt"></i>
 						</Icon>
 						<TextContent>
 							<Title>Online support</Title>

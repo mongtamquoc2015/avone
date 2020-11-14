@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import ROUTERS from './routers';
 import { Helmet } from 'react-helmet';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import SiteScroll from './components/SiteScroll';
+import ROUTERS from './routers';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 								<title>{router.title}</title>
 							</Helmet>
 							<router.component />
+							<SiteScroll />
 						</Route>
 					))
 				}

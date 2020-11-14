@@ -6,14 +6,12 @@ export const Container = styled.div`
 	margin: 0 0 30px;
 	width: 100%;
 	height: 34px;
-	border: 1px solid red;
 `;
 
 export const Navbar = styled.nav`
 	padding: 8px 15px;
 	max-width: 1200px;
   margin: 0 auto;
-	border: 1px solid green;
 	height: 100%;
 `;
 

@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import {
-	Container,
-	Frame, Icon, Image,
-	Item, ItemLink, Link,
-	List, Logo, Navigation,
+	Container, Frame, Icon, Image,
+	Item, Link, List, Logo, Navigation,
 	SearchBox, CloseSearch, SearchPopup,
 	SearchTitle, SearchIcon, Input, Modal,
 	ButtonSearch, SettingsIcon, SettingsPopup,
@@ -35,32 +33,32 @@ const Header = () => {
 	return (
 		<Container>
 			<Logo>
-				<Link href="/">
+				<Link to="/">
 					<Image src="https://cdn.shopify.com/s/files/1/0036/7306/3491/files/avon-logo.svg?v=8449398188089342562" />
 				</Link>
 			</Logo>
 			<Navigation>
 				<List>
 					<Item>
-						<ItemLink href="#">Home</ItemLink>
+						<Link to="#">Home</Link>
 					</Item>
 					<Item>
-						<ItemLink href="#">Shop</ItemLink>
+						<Link to="#">Shop</Link>
 					</Item>
 					<Item>
-						<ItemLink href="#">Features</ItemLink>
+						<Link to="#">Features</Link>
 					</Item>
 					<Item>
-						<ItemLink href="#">Lookbook</ItemLink>
+						<Link to="#">Lookbook</Link>
 					</Item>
 					<Item>
-						<ItemLink href="#">Pages</ItemLink>
+						<Link to="#">Pages</Link>
 					</Item>
 					<Item>
-						<ItemLink href="#">Blog</ItemLink>
+						<Link to="#">Blog</Link>
 					</Item>
 					<Item>
-						<ItemLink href="#">Buy Now</ItemLink>
+						<Link to="#">Buy Now</Link>
 					</Item>
 				</List>
 			</Navigation>
@@ -111,7 +109,7 @@ const Header = () => {
 					<CartCount onClick={toggleCartPopup}>1</CartCount>
 					<CartPopup isShowCartPopup={isShowCartPopup}>
 						<CartClose onClick={toggleCartPopup}>
-							<i class="fas fa-times"></i>
+							<i className="fas fa-times"></i>
 						</CartClose>
 						<CartTitle>Your cart</CartTitle>
 						<CartList>
@@ -129,7 +127,7 @@ const Header = () => {
 									</ProductPrice>
 								</ProductDetail>
 								<ItemClose>
-									<i class="fas fa-times"></i>
+									<i className="fas fa-times"></i>
 								</ItemClose>
 							</CartItem>
 							<CartItem>
@@ -141,7 +139,7 @@ const Header = () => {
 							<CartItem>
 								<Options>
 									<FreeShip>
-										<i class="fas fa-truck"></i>
+										<i className="fas fa-truck"></i>
 										You have got
 										<b> FREE SHIPPING</b>
 									</FreeShip>

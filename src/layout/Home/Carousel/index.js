@@ -24,7 +24,7 @@ const CarouselUI = ({ carouselImages }) => {
 				<GridContainer>
 					{
 						carouselImages.map(item => (
-							<GridItem>
+							<GridItem key={item.id}>
 								<Card>
 									<ProductLabel>
 										{
@@ -72,8 +72,8 @@ const CarouselUI = ({ carouselImages }) => {
 										<Icon>
 											<BadgeIcon>
 												{
-													[...Array(item?.star)].map(() => (
-														<i className="fas fa-star"></i>
+													[...Array(item?.star)].map((_, index) => (
+														<i key={index} className="fas fa-star"></i>
 													))
 												}
 											</BadgeIcon>
