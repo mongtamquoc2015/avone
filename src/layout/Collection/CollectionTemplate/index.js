@@ -1,16 +1,11 @@
 import React from 'react';
 import Card from '../../../components/Card/index.js';
 import {
-	Checkbox,
-	CollectionBanner,
-	CollectionDescription,
-	CollectionTitle,
-	Container, FiltersToolbar, Inner,
-	GridItem,
-	ItemCount,
-	Label,
-	LeftSidebar, Link, Grid, ProductCount, ProductList, RightSidebar, Select, SidebarTags,
-	SidebarWidget, Toolbar, WidgetContent, WidgetItem, WidgetList, WidgetTitle, Image
+	Checkbox, CollectionBanner, CollectionDescription, CollectionTitle,
+	Container, FiltersToolbar,
+	Grid, GridItem, Inner, ItemCount, Label,
+	LeftSidebar, Link, ProductCount, ProductList, RightSidebar, Select, SidebarTags,
+	SidebarWidget, Toolbar, WidgetContent, WidgetItem, WidgetList, WidgetTitle
 } from './CollectionTemplateStyles.js';
 
 const CollectionTemplateUI = ({

@@ -5,51 +5,14 @@ import { Helmet } from 'react-helmet';
 import { BreadcumbsUI, CollectionTemplateUI } from '../../layout/Collection';
 import { v4 as uuidv4 } from 'uuid';
 import { convertToSlug } from '../../helpers/convertToSlug';
+import axios from 'axios';
+import { useQuery } from 'react-query';
 
 const CollectionPage = () => {
 	const [collection, setCollection] = useState(null);
-	const [filter, setFilter] = useState('');
+	const [collections, setCollections] = useState([]);
+	const [filter, setFilter] = useState(null);
 	const { collectionSlug } = useParams();
-
-	// Example data
-	const collections = [
-		{
-			id: uuidv4(),
-			name: 'Men',
-			slug: 'men',
-			description: 'The very latest in globally-recognised clothing brands offers you with an exquisite range of Branded Clothes, Artificial Jewelry, Shoes, Beauty Products and Accessories for Women, Men & Kids at affordable price'
-		},
-		{
-			id: uuidv4(),
-			name: 'Women',
-			slug: 'women',
-			description: 'The very latest in globally-recognised clothing brands offers you with an exquisite range of Branded Clothes, Artificial Jewelry, Shoes, Beauty Products and Accessories for Women, Men & Kids at affordable price'
-		},
-		{
-			id: uuidv4(),
-			name: 'Shoes',
-			slug: 'shoes',
-			description: 'The very latest in globally-recognised clothing brands offers you with an exquisite range of Branded Clothes, Artificial Jewelry, Shoes, Beauty Products and Accessories for Women, Men & Kids at affordable price'
-		},
-		{
-			id: uuidv4(),
-			name: 'Popular',
-			slug: 'popular',
-			description: 'The very latest in globally-recognised clothing brands offers you with an exquisite range of Branded Clothes, Artificial Jewelry, Shoes, Beauty Products and Accessories for Women, Men & Kids at affordable price'
-		},
-		{
-			id: uuidv4(),
-			name: 'Best Seller',
-			slug: 'best-seller',
-			description: 'The very latest in globally-recognised clothing brands offers you with an exquisite range of Branded Clothes, Artificial Jewelry, Shoes, Beauty Products and Accessories for Women, Men & Kids at affordable price'
-		},
-		{
-			id: uuidv4(),
-			name: 'Accesories',
-			slug: 'accesories',
-			description: 'The very latest in globally - recognised clothing brands offers you with an exquisite range of Branded Clothes, Artificial Jewelry, Shoes, Beauty Products and Accessories for Women, Men & Kids at affordable price'
-		},
-	];
 
 	const sizes = [
 		{
